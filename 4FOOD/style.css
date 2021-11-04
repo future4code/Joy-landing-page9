@@ -15,22 +15,70 @@ header{
 main{
     background-color: #e7ded5;
 }
+/* Footer */
+
 footer{
     position: absolute;
     bottom: 0;
-    height: 60px;
+    height: 30vh;
     width:100%;
+    background-color: #D1ACA0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+
+footer h1{
+    font-size: 20px;
+}
+
+.container-formulario-contato{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: right;
-    background-color: #a1b8a4;
+    padding-top: 2vh;
 }
-footer>h1{
-    margin-right: 700px;
+
+.formulario{
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input{
+    width: 30vw;
+    height: 20px;
+}
+
+.button{
+    text-align: end;
+}
+
+#button{
+    padding: 4px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px;
+    background-color: #e7ded5;
+    cursor: pointer;
+}
+
+#button:hover{
+    background-color: #B9825D;
+}
+
+#button:active{
+    background-color: #6e4e39;
+    color:  #e7ded5;
+}
+
+.container-redes-sociais{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 2vh;
+}
     
-}
-footer>a>img{
+.redes-sociais img{
     height: 30px;
     width: 30px;
-    margin-right: 20px;  
+    margin: 3px;
 }
