@@ -64,13 +64,15 @@ header{
 }
 
 .dropdown:hover .menu {
-    display: block;
+    display:block;
+    position: absolute;
 }
 
 /* Main */
 main{
     background-color: #e7ded5;
     display: grid;
+    padding-bottom: 280px;
 }
 nav{
     display: flex;
@@ -103,7 +105,7 @@ footer{
     position:fixed;
     bottom: 0;
     left: 0;
-    height: auto;
+    height: 260px;
     width:100%;
     padding-bottom: 8px;
     background-color: #D1ACA0;
@@ -213,10 +215,12 @@ padding-top: 2vh;
 
 
     /* Main */
-    
+    main{
+        padding-bottom: 240px;
+    }
     /* Footer */
     footer{
-        height: auto;
+        height: 220px;
         padding-bottom: 4px;
     }
 
