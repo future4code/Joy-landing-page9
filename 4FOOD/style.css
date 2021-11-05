@@ -4,21 +4,75 @@
 }
 body{ 
     font-family: 'Roboto Condensed';
+    height: 100%;
 }
+
+.geral{
+    position: relative;
+    min-height: 100%;
+}
+/* Header */
+
 header{
     height:110px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .logo{
     height: 110px;
-    width: 110px;    
+    width: auto;    
 }
+
+.menu-button {
+    background-color: #D1ACA0;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding:8px;
+    width: fit-content;
+}
+
+.menu-button:hover {
+    background-color: #B9825D;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+}
+
+.menu {
+    display: none;
+    background-color: #D1ACA0;
+    width: fit-content;
+    margin: 0px;   
+}
+.menu a {
+    padding: 4px;
+    margin:1px auto;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.menu a:hover{
+    background-color: #B9825D;
+}
+
+.dropdown:hover .menu {
+    display:block;
+    position: absolute;
+}
+
+/* Main */
 main{
     background-color: #e7ded5;
     display: grid;
-
+    padding-bottom: 280px;
 }
 nav{
     display: flex;
@@ -48,10 +102,12 @@ nav{
 /* Footer */
 
 footer{
-    position: absolute;
+    position:fixed;
     bottom: 0;
-    height: 40vh;
+    left: 0;
+    height: 260px;
     width:100%;
+    padding-bottom: 8px;
     background-color: #D1ACA0;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -79,7 +135,7 @@ footer h1{
     height: 15px;
 }
 
-.button{
+.form-button{
     text-align: end;
 }
 
@@ -111,4 +167,82 @@ padding-top: 2vh;
     height: 30px;
     width: 30px;
     margin: 3px;
+}
+
+@media screen  and (max-device-width:375px){
+    /* Header */
+    header{
+        height: 14vh;
+        font-size: 10px;
+    }
+
+    .logo{
+        height: 14vh;
+        width: auto;
+    }
+
+    .menu-button {
+        background-color: #D1ACA0;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        padding:8px;
+    }
+    .menu-button:hover {
+        background-color: #B9825D;
+        }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .menu {
+        display: none;
+        background-color: #D1ACA0;
+        width: fit-content;
+        margin: 0px 0 ;   
+    }
+    .menu a {
+        padding: 4px;
+        margin-bottom:1px;
+        font-size: 14px;
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+    .dropdown:hover .menu {
+        display: block;
+    }
+
+
+    /* Main */
+    main{
+        padding-bottom: 240px;
+    }
+    /* Footer */
+    footer{
+        height: 220px;
+        padding-bottom: 4px;
+    }
+
+    footer h1{
+        font-size: 16px;
+    }
+
+    .redes-sociais img{
+        height: 24px;
+        width: 24px;
+        margin: 3px;
+    }
+
+    .formulario{
+        margin: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .formulario input{
+        width: 30vw;
+        height: 12px;
+    }
+
 }
