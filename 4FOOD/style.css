@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body{ 
+    font-family: 'Roboto Condensed';
+
+}
 header{
     height:110px;
     display: flex;
@@ -14,13 +18,40 @@ header{
 }
 main{
     background-color: #e7ded5;
+    display: grid;
+
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 8px;
+}
+.botoes{
+    display: flex;
+    align-items: stretch;
+    width: 190px;
+    height: 20px;
+    box-shadow: 1px 1px 4px;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: #D1ACA0;
+    cursor: pointer;
+    text-decoration: none;
+}
+.botoes:hover{
+    background-color: #c5cec6;
+}
+.botoes:active{
+    color: #6e4e39;
+    background-color: #B9825D;
 }
 /* Footer */
 
 footer{
     position: absolute;
     bottom: 0;
-    height: 30vh;
+    height: 40vh;
     width:100%;
     background-color: #D1ACA0;
     display: grid;
@@ -46,7 +77,7 @@ footer h1{
 
 .formulario input{
     width: 30vw;
-    height: 20px;
+    height: 15px;
 }
 
 .button{
