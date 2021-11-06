@@ -1,2 +1,2 @@
 # landing-page-template
-# https://repulsive-bushes.surge.sh/
+# https://dashing-apparatus.surge.sh/
