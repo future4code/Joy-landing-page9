@@ -153,7 +153,7 @@ nav{
 }
 .empresas-parceiras>img{
     height: 20vh;
-    width:max-content;
+    width:10vw;
     margin-top: 20vh;
     margin-left: 10vw;
 }
@@ -344,7 +344,12 @@ padding-top: 2vh;
         width: 90%;
         height: 90vh;
         margin: 5vw;
-
+    }
+    .empresas-parceiras>img{
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        height: 40vh;
     }
     .faq{
         font-size: smaller;
