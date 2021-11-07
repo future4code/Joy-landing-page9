@@ -1,2 +1,2 @@
 # landing-page-template
-# https://outgoing-stage.surge.sh/
+# https://wise-manager.surge.sh/
