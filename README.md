@@ -1,2 +1,2 @@
 # landing-page-template
-# https://dashing-apparatus.surge.sh/
+# https://outgoing-stage.surge.sh/
